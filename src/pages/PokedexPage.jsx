@@ -53,7 +53,7 @@ const PokedexPage = () => {
         <div className="home__circule2 nav__circule2"></div>
         </div>
         <div className="home__black nav__black"></div>
-        <img className="nav__img" src="./public/image 11.png" alt="" />
+        <img className="nav__img" src="/image 11.png" alt="" />
       </nav>
       <main className="main__container">
         <div className="div">
