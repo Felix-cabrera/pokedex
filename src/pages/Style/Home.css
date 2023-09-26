@@ -1,0 +1,137 @@
+.home__container{
+    margin:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+}
+.home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: max-content;
+    gap: 0.1em;
+    margin: auto;
+    position: relative;
+}
+.home__img{
+    min-width: 10%;
+    margin-bottom: 2em;
+}
+.home__title{
+    color: red;
+}
+.home__p{
+    font-size: 1.3em;
+    margin-bottom: 2em;
+}
+.home__form{
+    border: 0.1em solid rgba(128, 128, 128, 0.541);
+    border-top-left-radius: 1em;
+    border-bottom-left-radius: 1em;
+    width: max-content;
+    transition: transform 150ms ease;
+}
+.home__form:hover{
+    transform: scale(1.05);
+}
+.home__input{
+    font-size: 1.4em;
+    border: none;
+    border-radius: 1em;
+}
+.home__button{
+    font-size: 1.4em;
+    width: 5.5em;
+    height: 2em;
+    background-color:rgb(206, 46, 46);
+    color: white;
+    border: none;
+    transition: transform 150ms ease;
+}
+.home__button:hover{
+    transform: scale(1.05);
+}
+.home__err{
+    margin-top: 1em;
+    font-size: 1.3em;
+    color: red;
+}
+.home__footer{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    height: 20vh;
+}
+.home__red{
+    background-color: rgba(255, 0, 0, 0.884);
+    height: 67%;
+    width: 100%;
+}
+.home__black{
+    background-color: rgb(15, 14, 14);
+    height: 33%;
+    width: 100%;
+}
+.home__circule{
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translateX(50%);
+    border: 0.4em solid black;
+    border-radius: 50%;
+    background-color: white;
+}
+.home__circule2{
+    width: 45px;
+    height: 45px;
+    border: 0.55em solid black;
+    border-radius: 50%;
+    position: relative;
+    top: 16%;
+    left: 18%;
+    background-color: rgba(34, 32, 32, 0.918);
+}
+@media only screen and (max-width: 700px) {
+    .home{
+        margin: 47.5% 0;
+        min-height: 100vh;
+        width: 100%;
+    }
+    .home__footer{
+        height: 20vh;
+        width: 100%;
+    }
+    .home__img{
+        padding: 1em;
+        min-width: 85%;
+        margin-bottom: 2em;
+    }
+   .home__circule{
+        bottom: 10em;
+    
+   }
+}
+@media  only screen and (min-Width:600px) {
+    .home{
+        margin: 20% 0;
+    }
+    .home__footer{
+        height: 36vh;
+        width: 100%;
+    }
+}
+@media  only screen and (min-Width:700px) {
+    .home{
+        margin: 10% 0;
+    }
+    .home__footer{
+        height: 17vh;
+        width: 100%;
+    }
+}

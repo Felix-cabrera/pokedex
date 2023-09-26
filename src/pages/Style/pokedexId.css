@@ -1,0 +1,135 @@
+.pokedexid{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 0.5em;
+    width: 80%;
+    margin: auto;
+    padding-top: 20vh;
+}
+.pokedexid__header{
+    background-color: #999;
+    aspect-ratio: 2;
+    position: relative;
+    height: 20vh;
+    width: 100%;
+    margin: 17em 0 0 0;
+}
+.pokedexid__img{
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    bottom:0 ;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.title{
+    margin-bottom: 1em;
+}
+.pokedexid__type{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2em ;
+    text-align: center;
+}
+.container__type{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    gap: 0 1.5em;
+}
+.type__li{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.2em;
+}
+.type__text{
+    font-weight: 700;
+}
+.type__item{
+    padding: 0.5em;
+    width: 8em;
+    color: white;
+}
+.type__item1{
+    border: 1px solid rgba(128, 128, 128, 0.418);
+    padding: 0.7em;
+    color:black;
+}
+.pokedexid__stats{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    padding: 1.5em;
+    margin-top: 2em;
+    border: 3px solid rgb(255, 228, 196);
+    border-radius: 1em;
+}
+.stats__base{
+    position: relative;
+    right: 0;
+}
+.stats__container{
+    display: flex;
+    justify-content: space-between;
+}
+.barra{
+    width: 100%;
+    height: 20px;
+    background: rgb(228, 220, 206);
+    border-radius: 1em;
+}
+.progreso{
+    margin-top: 1em;
+    height: 100%;
+    border-radius: 1em;
+}
+.movements{
+    width: 80%;
+    margin: auto;
+    margin-top: 2em;
+    border: 3px solid rgb(255, 228, 196);
+    padding: 1.5em;
+    border-radius: 1em;
+    margin-bottom: 1em;
+}
+.movements__container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1em 0.8em;
+}
+.movements__title{
+    margin-bottom: 1.5em;
+    color: rgb(206, 144, 68);
+}
+.movements__item{
+    padding: 0.5em;
+    border: 1px solid rgb(243, 199, 145);
+    border-radius: 1em;
+    background-color: bisque;
+}
+.movements__item:hover{
+    transform: scale(1.1);
+    background-color: rgb(253, 220, 179);
+}
+@media  only screen and (max-Width:700px) {
+    .pokedexid{
+        width: 90%;
+    }
+    .movements{
+        width: 90%;
+        margin-top: 1.5em;
+    }
+    .pokedexid__header{
+        height: 20vh;
+    }
+}
