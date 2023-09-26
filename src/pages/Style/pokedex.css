@@ -11,7 +11,7 @@
 }
 .nav__circule{
     right: 6em;
-    top: 4em;
+    top: 6em;
 }
 .nav__img{
     width: 300px;
@@ -24,13 +24,14 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 1.5em;
-    margin-top: 20vh ;
+    flex-wrap: wrap;
+    gap: 0.5em 1.5em;
+    margin-top: 15vh ;
     width: 100%;
-    padding: 0 2em;
+    padding: 4em 2em 0 2em;
 }
 .div__title{
-    margin: 3em 0;
+    margin: 1.5em 0;
     font-size: 1.1em;
 }
 .total{
@@ -68,5 +69,12 @@ option:hover{
     .div{
         padding-top: 20vh;
         width: 90%;
+    }
+    .nav__circule{
+        top: 3em;
+        right: 5em;
+    }
+    .nav__img{
+        left: 3em;
     }
 }

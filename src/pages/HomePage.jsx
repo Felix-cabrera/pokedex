@@ -23,7 +23,7 @@ const HomePage = () => {
   return (
     <section className="home__container">
       <div className="home">
-        <img className="home__img" src="./public/image 11.png" alt="" />
+        <img className="home__img" src="/image 11.png" alt="" />
         <h1 className="home__title">Hi Trainer !</h1>
         <p className="home__p" >To Start, please, enter your trainer nickname</p>
         <form className="home__form" onSubmit={handleTrainer}>
