@@ -3,7 +3,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    min-height: max-content;
     width: 100%;
 }
 .home{
@@ -13,7 +13,7 @@
     align-items: center;
     width: max-content;
     gap: 0.1em;
-    padding-bottom: 25vh;
+    padding-bottom: 20vh;
 }
 .home__img{
     width: 95%;
