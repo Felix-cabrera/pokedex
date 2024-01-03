@@ -21,26 +21,27 @@ const PokedexPage = () => {
 
   useEffect(() => {
     if(typeSelected === 'allPokemons'){
-
+      getPokemons()
     } else {
       getTypePokemon(typeSelected)
     }
-    getPokemons()
+    
   },[typeSelected])
 
   const handleSearch = e => {
     e.preventDefault()
     setInputValue(inputSearch.current.value.trim().toLowerCase())
   }
-  console.log(pokemons)
+  
   const pokeFiltered = pokemons?.results.filter(poke => poke.name.includes(inputValue))
   const Number = [2,4,6,8,10]
   const total = 5
-  const[productsPerPage, setProductsPerPage] = useState(Number || total ? 5 : '')
-  const[currentPage, setCurrentPage] = useState(1)
+  const [productsPerPage, setProductsPerPage] = useState(Number || total ? 5 : '')
+  const [currentPage, setCurrentPage] = useState(1)
   const totalProducts = pokemons?.results.length
   const lastIndex = currentPage * productsPerPage
   const firstIndex = lastIndex - productsPerPage
+  
   const handleChan = e =>{
     e.preventDefault()
     setProductsPerPage(e.target.value)
