@@ -22,8 +22,10 @@ const PokedexPage = () => {
   useEffect(() => {
     if(typeSelected === 'allPokemons'){
       getPokemons()
+      setCurrentPage(1)
     } else {
       getTypePokemon(typeSelected)
+      setCurrentPage(1)
     }
     
   },[typeSelected])
@@ -34,9 +36,9 @@ const PokedexPage = () => {
   }
   
   const pokeFiltered = pokemons?.results.filter(poke => poke.name.includes(inputValue))
-  const Number = [2,4,6,8,10]
-  const total = 5
-  const [productsPerPage, setProductsPerPage] = useState(Number || total ? 5 : '')
+  const Number = [5,15]
+  const total = 10
+  const [productsPerPage, setProductsPerPage] = useState(Number || total ? 10 : '')
   const [currentPage, setCurrentPage] = useState(1)
   const totalProducts = pokemons?.results.length
   const lastIndex = currentPage * productsPerPage

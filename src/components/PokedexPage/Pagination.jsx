@@ -12,25 +12,25 @@ const Pagination = ({productsPerPage, currentPage, setCurrentPage, totalProducts
     setCurrentPage(currentPage - 1)
   }
   const onNextPage = () => {
-    if(currentPage + 1 <= Math.ceil(totalProducts/productsPerPage))
+    if(currentPage + 1 <= pageNumbers.length)
     setCurrentPage(currentPage + 1)
   }
   const onSpecifiPage = (n) => {
     setCurrentPage(n)
   }
   return (
-    <nav className="pagination" role="navigation" aria-label="pagination">
-      <button className={`pagination__button ${currentPage === 1 ? 'is-disabled':''}`} onClick={onPreviusPage}>Previous</button>
+    <nav className="pagination is-centered mb-3" role="navigation" aria-label="pagination">
+      <a className={`pagination-previous ${currentPage === 1 ? 'is-disabled':''}`} onClick={onPreviusPage}>Previous</a>
+      <a className={`pagination-next ${currentPage >= pageNumbers.length ? 'is-disabled':''}`} onClick={onNextPage}>Next page</a>
       <ul className="pagination-list">
         { pageNumbers.map(noPage => (
-          <li className={`pagination__item ${noPage === currentPage ?'is-current' : ''}`} key={noPage}>
-            <a 
+          <li key={noPage}>
+            <a className={`pagination-link ${noPage === currentPage ?'is-current' : ''}`}
             onClick={() => onSpecifiPage(noPage)}>{noPage}</a>
           </li>
         ))}
       </ul>
-      <button className={`pagination__button ${currentPage >= pageNumbers.length ? 'is-disabled':''}`} onClick={onNextPage}>Next page</button>
-  </nav>
+   </nav>
   )
 }
 
